@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Eldar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Выравнивание контента по вертикали */
+            height: 100%;
+            max-width: 20cm;
+            padding: 20px;
+            background-color: #ae96e7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .text, .photo {
+            flex: 1;
+            opacity: 0;
+        }
+
+        .text {
+            padding: 20px;
+            animation: slideInLeft 1s forwards 0.5s;
+        }
+
+        .photo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            animation: slideInRight 1s forwards 0.5s;
+        }
+
+        .photo img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* Центрирование блоков на странице */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Левая секция с Blender */
+        .left-section {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        /* Правая секция с изображениями */
+        .right-section {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .right-container, .photo2 {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e1e7e7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .photo2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: slideInRight 1s forwards 0.5s;
+        }
+
+        .photo2 img {
+            width: 300px;
+            height: auto;
+            border-radius: 0%;
+        }
+
+
+        .photo3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: slideInRight 1s forwards 0.5s;
+        }
+
+        .photo3 img {
+            width: 100px;
+            height: auto;
+            border-radius: 45%;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+ /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+ .about-me {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    min-width: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.about-container h1 {
+    color: #ae96e7;
+    font-size: 36px;
+}
+
+.about-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="text">
+            <h1>Eldar Zeitullaev</h1>
+            <p>07.09.2001</p>
+            <h2>Completed Education</h2>
+            <p>Beykent University(PC Programming)</p>
+            <h2> Education in Action</h2>
+            <p> Esenyurt University(PC Engineering)</p>
+           
+        </div>
+        <div class="photo">
+            <img src="c:/Users/ELDAR/Desktop/CV/resimler/logo.jpg" alt="resminiz">
+        </div>
+    </div>
+    <div class="about-me">
+        <div class="about-container">
+            <h1>Hakkımda</h1>
+<p>Yazılım yolum Beyken Üniversitede başlanmaktadır. Bilgisayar programcılık bölümu okuyup bitirdim. Sırada olan hedefim PC Engineering tamamlamak, sebebiyle Esenyurt Üniversiteye yazıldım.
+    İlgilendiğim alanlar ise, genelde Front-end projeler, 2/3 Desighn/modeling.</p>
+    <p>* 2 boyutlu modeling olarak, content desighner olarak kendimi 1.5 ay boyunca Vkontakte medyasındaki bir sayfada denedim.
+        3d modeling olarak uzun süre Blender üzerinde yaptığım küçük projelerim vardı. 2 defa Blender üzerinde Mağaza planın tasarımı yaptım.
+    </p>
+<p>
+* Game Development. Oyun tasarım olarak 2-3 projem var toplam, 2 tane okul projesi, bir tanesi de itch.io site üzerinde paylaşılan demo versiyonlu bir oyun, Sci-Fi konusunu taşıyan bir horror oyunu. Hakim olduğum oyun motor: Unity- başlangıç seviyesi    
+</p>
+</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="content-wrapper">
+        <!-- Левая секция с Blender -->
+        <div class="left-section">
+            <div class="right-container" style="animation: slideInLeft 1s forwards;">
+                <h1>3d modeling</h1>
+                <h2>Project's in Blender</h2>
+            </div>
+
+            <div class="photo2">
+                <h2>AR-15</h2>
+                <img src="c:/Users/ELDAR/Desktop/CV/resimler/ar15.jpg" alt="resminiz">
+                <img src="c:/Users/ELDAR/Desktop/CV/resimler/ar-15-3.jpg" alt="resminiz">
+                <img src="c:/Users/ELDAR/Desktop/CV/resimler/ar-15-2.jpg" alt="resminiz">
+            </div>
+
+            <div class="photo2">
+                <h2>LIAV Breadley "Tusk-3"</h2>
+                <img src="c:/Users/ELDAR/Desktop/CV/resimler/btr.jpg" alt="resminiz">
+            </div>
+
+            <div class="photo2">
+                <h2>Donut</h2>
+                <img src="c:/Users/ELDAR/Desktop/CV/resimler/ponchik.jpg" alt="resminiz">
+            </div>
+        </div>
+
+        <!-- Правая секция -->
+        <div class="right-section">
+            <div class="right-container" style="animation: slideInRight 1s forwards;">
+              <h1>Game Development</h1>
+            <h2>Game created in Unity  </h2>
+            <p>Space Alone. Beta test of Csi-fi horror lore-based game in space on a ship</p>
+
+          <div class="photo3">
+            <a href="https://hawk1911.itch.io" class="image-button">
+                <img src="https://img.itch.zone/aW1nLzEyMzc3MTYwLnBuZw==/315x250%23c/X0D6jC.png" alt="link-button"></a>         
+       </div>
+       
+        </div>
+        
+        <div class="photo2">
+            <h2>Itch.io</h2>
+            <p>My page on itch.io with my game project</p>
+            <img src="c:\Users\ELDAR\Desktop\CV\resimler\Screenshot_1.png" alt="resminiz">
+        </div>
+      
+        <div class="photo2">
+            <h2>Space Alone</h2>
+            <p>Gameplay Screenshot's of the game</p>
+            <p>scr 1</p>
+        <img src="c:\Users\ELDAR\Desktop\CV\resimler\gp1 .jpeg" alt="resim">
+        <p>scr 2</p>
+        <img src="c:\Users\ELDAR\Desktop\CV\resimler\gp2.jpeg" alt="resim">
+        </div>
+
+        <video width="400   " height="360" controls>
+            <source src="C:\Users\ELDAR\Desktop\CV\resimler\supressedgameplay.mp4" type="video/mp4">
+           
+        </video>
+      
+    </div>
+    
+
+</body>
+
+</html>
